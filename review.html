@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARTIST</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <div>ARTISTIC_SISTERS</div>
+            </div>
+            <div class="Navitems">
+                <a href="index.html">Home</a>
+                <a href="Shop.html">Shop</a>
+                <a href="artists.html">Artists</a>
+                <a href="review.html">Reviews</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+
+        <h3 style="font-size: 35px; text-align: center; color: black;">REVIEWS</h3>
+        <h3 style="font-size: 35px; text-align: center; color: black;">---- Our Happy Customers ----</h3>
+
+        <div class="photo-container">
+            <div class="photo-container1">
+                <img src="review4.jpg" alt="Descriptive Alt Text" class="styled-photo">
+                <h3>JANE SMITH</h3>
+                <div class="stars">
+                    &#9733;&#9733;&#9733;&#9733;&#9733;
+                </div>
+                <p>The attention to detail in each piece is simply breathtaking. Every brushstroke brings out the nuances and depth of the subject, making the portrait come alive. Thank you for the beautiful portrait!</p>
+            </div>
+            <div class="photo-container2">
+                <img src="review2.jpg" alt="Descriptive Alt Text" class="styled-photo">
+                <h3>PAVAN</h3>
+                <div class="stars">
+                    &#9733;&#9733;&#9733;&#9733;&#9733;
+                </div>
+                <p>This artist has an incredible talent for capturing not just the likeness but the very essence and emotion of the subjects. Truly an exceptional artist with an eye for perfection. Every portrait feels deeply personal and full of life. Absolutely stunning work!</p>
+            </div>
+            <div class="photo-container3">
+                <img src="review3.jpg" alt="Descriptive Alt Text" class="styled-photo">
+                <h3>SHUBHAM JHA</h3>
+                <div class="stars">
+                    &#9733;&#9733;&#9733;&#9733;&#9733;
+                </div>
+                <p>"Not only is the artwork phenomenal, but the artist is also a pleasure to work with—professional, courteous, and passionate about their craft. The entire experience was wonderful from start to finish."</p>
+            </div>
+        </div>
+    </div>
+  
+
+        <div class="review-form">
+           <h2 style="font-size: 35px; text-align: center; color: black;">Submit Your Review</h2>
+            <form action="submit-review.php" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="rating">Rating:</label>
+                    <select id="rating" name="rating" required>
+                        <option value="5">5 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="2">2 Stars</option>
+                        <option value="1">1 Star</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="review">Review:</label>
+                    <textarea id="review" name="review" rows="4" required></textarea>
+                </div>
+                <button type="submit">Submit Review</button>
+            </form>
+        </div>
+    </div>
+  
+<br>
+<br>
+    
+   <footer>   
+       <div class="footer-content">
+            <div class="footer-section about">
+                <h2>About Us</h2>
+                <p>Welcome to Artistic_sisters, where creativity knows no bounds. We're more than just creators; we're storytellers, dreamers contributing their unique perspective to our collective canvas.</p>
+                <p>Whether you're an art enthusiast, a seasoned collector, or someone exploring the world of creativity for the first time, we invite you to join us on this journey. Let's explore, create, and inspire together.</p>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <p>Email: velumasathvika@gmail.com</p>
+                <p>Phone: 9652832632</p>
+                <div class="socials">
+                    <a href="https://www.facebook.com/"><img src="facebook.png" alt="Facebook"></a>
+                    <a href="https://x.com/Sanjana_velma"><img src="twitter.png" alt="Twitter"></a>
+                    <a href="https://www.instagram.com/_sanjana_velma_"><img src="insta.png" alt="Instagram"></a>
+                    <a href="https://www.linkedin.com/in/-sanjanareddy-velma/"><img src="linkedin.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
