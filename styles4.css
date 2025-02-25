@@ -36,6 +36,8 @@ body {
     .header .logo div {
         font-size: 36px;
     }
+}
+@media (max-width: 1200px) {
     .header .Navitems a {
         font-size: 24px;
     }
@@ -45,6 +47,8 @@ body {
     .header .logo div {
         font-size: 30px;
     }
+}
+@media (max-width: 992px) {
     .header .Navitems a {
         font-size: 22px;
     }
@@ -55,15 +59,19 @@ body {
         flex-direction: column;
         text-align: center;
     }
-
+}
+@media (max-width: 768px) {
     .header .logo div {
         font-size: 26px;
     }
-
+}
+@media (max-width: 768px) {
     .header .Navitems {
         flex-direction: column;
         margin-top: 10px;
     }
+}
+@media (max-width: 768px) {
 
     .header .Navitems a {
         font-size: 20px;
@@ -75,7 +83,8 @@ body {
     .header .logo div {
         font-size: 20px;
     }
-
+}
+@media (max-width: 576px) {
     .header .Navitems a {
         font-size: 18px;
     }
@@ -151,11 +160,15 @@ body {
         text-align: center;
         padding: 15px;
     }
+}
+@media (max-width: 768px) {
 
     .styled-photo {
         width: 80%;
         margin: 0 auto 10px auto;
     }
+}
+@media (max-width: 768px) {
 
     .artist-info h3 {
         text-align: center;
