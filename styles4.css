@@ -79,7 +79,8 @@ body {
     .header .Navitems a {
         font-size: 18px;
     }
-}.photo-container {
+}
+.photo-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -144,7 +145,6 @@ body {
     transform: scale(1.2);
 }
 
-/* Mobile Responsive */
 @media (max-width: 768px) {
     .photo-box {
         flex-direction: column;
