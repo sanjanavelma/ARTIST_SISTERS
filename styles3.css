@@ -274,13 +274,12 @@ button:hover {
     }
 }
 
-.footer {
+footer {
     background-color: black;
     color: white;
     padding: 40px 20px;
     text-align: center;
 }
-
 .footer-content {
     display: flex;
     justify-content: space-between;
