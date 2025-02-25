@@ -31,6 +31,8 @@
     .header .logo div {
         font-size: 36px;
     }
+}
+@media (max-width: 1200px) {
     .header .Navitems a {
         font-size: 24px;
     }
@@ -40,6 +42,8 @@
     .header .logo div {
         font-size: 30px;
     }
+}
+@media (max-width: 992px) {
     .header .Navitems a {
         font-size: 22px;
     }
@@ -50,16 +54,19 @@
         flex-direction: column;
         text-align: center;
     }
-
+}
+@media (max-width: 768px) {
     .header .logo div {
         font-size: 26px;
     }
-
+}
+@media (max-width: 768px) {
     .header .Navitems {
         flex-direction: column;
         margin-top: 10px;
     }
-
+}
+@media (max-width: 768px) {
     .header .Navitems a {
         font-size: 20px;
         margin: 10px 0;
@@ -70,11 +77,13 @@
     .header .logo div {
         font-size: 20px;
     }
-
+}
+@media (max-width: 576px) {
     .header .Navitems a {
         font-size: 18px;
     }
-}.reviews-container {
+}
+.reviews-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -129,7 +138,8 @@
         flex-direction: column;
         align-items: center;
     }
-
+}
+@media (max-width: 900px) {
     .review-card {
         width: 90%;
         max-width: 400px;
@@ -279,7 +289,6 @@ footer {
     padding-top: 10px;
 }
 
-/* Responsive Footer */
 @media (max-width: 768px) {
     .footer-section {
         width: 100%;
