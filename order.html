@@ -3,90 +3,209 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ARTIST</title>
-    <link rel="stylesheet" href="styles1.css">
+    <link rel="stylesheet" href="style1.css">
     <style>
-        .home-button {
-            font-size: 58px;
-            font-weight: bold;
-            margin-bottom: 20px;
-            margin-top: 29px;
-            color: #a10e09;
-            text-align: center;
-            text-decoration: none;
-            font-family: "Times New Roman";
-            transition: background-color 0.3s ease;
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
         }
 
-        .home-button:hover {
-            color: black;
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 90%;
+            max-width: 1200px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            height: 600px; /* Set equal height for both sections */
+        }
+
+        .image-container {
+            flex: 1;
+            position: relative;
+            background: url('order.jpg') no-repeat center center/cover;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .overlay .text {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+            font-size: 30px;
+        }
+
+        .form-container {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            position: relative;
+        }
+
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 50px;
+            font-weight: bold;
+            color: #a10e09;
+            text-decoration: none;
+        }
+
+        .logo:hover {
+            text-decoration: underline;
+        }
+
+        h2 {
+            text-align: center;
+            color: #a10e09;
+            margin-top: 50px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #a10e09;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: black;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .image-container {
+                height: 400px;
+            }
+
+            .overlay .text {
+                font-size: 16px;
+            }
+
+            .form-container {
+                height: auto;
+            }
+
+            .logo {
+                font-size: 20px;
+                top: 10px;
+            }
+
+            h2 {
+                margin-top: 40px;
+            }
         }
     </style>
 </head>
+
 <body>
-      <div class="img-container">
-        <div class="photo-container">
-            <div class="photo-container1">
-                <div class="image-wrapper">
-                    <img src="order.jpg" alt="Descriptive Alt Text" class="styled-photo">
-                    <div class="overlay">
-                        <div class="text"><h1>WELCOME  TO</h1><br><p>HOW IT WORKS</p><br><p>Place your order here</p><br>You'll receive an email asking for further details about the artwork and delivery address</p><br><p>we will answer your all queries about delivery time and exact price details through email based on the artwork you desire</p><br><p>THANK YOU>3</p> </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer1" style="text-align: center;">
-                <a href="index.html" class="home-button">ARTISTIC_SISTERS</a>
-                <div class="search1">
-                    <form>
-                        <div class="form-group">
-                            <label for="first-name">First Name*:</label>
-                            <input type="text" id="first-name" name="first-name" required autofocus placeholder="Enter the first name" maxlength="30">
-                        </div>
-                        <div class="form-group">
-                            <label for="last-name">Last Name:</label>
-                            <input type="text" id="last-name" name="last-name" placeholder="Enter the last name">
-                        </div>
-                        <div class="form-group">
-                            <label for="address">Address:</label>
-                            <input type="text" id="address" name="address" placeholder="Enter your address">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email*:</label>
-                            <input type="email" id="email" name="email" required placeholder="Enter your email">
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone Number:</label>
-                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
-                        </div>
-                        <div class="form-group">
-                            <label>Gender:</label>
-                            <div class="radio-group">
-                                <input type="radio" id="male" name="gender" value="male">
-                                <label for="male">Male</label>
-                                <input type="radio" id="female" name="gender" value="female">
-                                <label for="female">Female</label>
-                                <input type="radio" id="other" name="gender" value="other">
-                                <label for="other">Other</label>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label>CATEGORY</label>
-                            <select name="category" id="category">
-                                <option value="#">Painting</option>
-                                <option value="#">Potrait</option>
-                                <option value="#">Customized painting</option>
-                                <option value="#">Customized gifts</option>
-                                <option value="#">Design and patterns</option>
-                                <option value="#">Digital art</option>
-                            </select>
-                        </div>
-                        <button type="submit">ORDER NOW</button>
-                    </form>
+
+    <div class="container">
+        <div class="image-container">
+            <div class="overlay">
+                <div class="text">
+                    <h1>WELCOME TO</h1>
+                    <p><strong>HOW IT WORKS</strong></p>
+                    <p>Place your order here.</p>
+                    <p>You'll receive an email asking for further details about the artwork and delivery address.</p>
+                    <p>We will answer all your queries about delivery time and exact price details through email based on the artwork you desire.</p>
+                    <p>THANK YOU ❤️</p>
                 </div>
             </div>
         </div>
-      </div>  
+
+        <div class="form-container">
+            <a href="index.html" class="logo">ARTISTIC_SISTERS</a>
+            <h2>Order Your Artwork</h2>
+            <form>
+                <div class="form-group">
+                    <label for="first-name">First Name*:</label>
+                    <input type="text" id="first-name" name="first-name" required placeholder="Enter your first name">
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Enter your last name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email*:</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="category">Category</label>
+                    <select name="category" id="category">
+                        <option value="#">Painting</option>
+                        <option value="#">Portrait</option>
+                        <option value="#">Customized Painting</option>
+                        <option value="#">Customized Gifts</option>
+                        <option value="#">Design and Patterns</option>
+                        <option value="#">Digital Art</option>
+                    </select>
+                </div>
+                <button type="submit">ORDER NOW</button>
+            </form>
+        </div>
+    </div>
+
 </body>
 </html>
